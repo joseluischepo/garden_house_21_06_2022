@@ -1,0 +1,129 @@
+ 
+
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Sistema</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <style type="text/css">
+        .wrapper{
+            width: 650px;
+            margin: 0 auto;
+        }
+        .page-header h2{
+            margin-top: 0;
+        }
+        table tr td:last-child a{
+            margin-right: 15px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>
+
+
+
+    </head>
+
+
+
+    <body class="sb-nav-fixed">
+
+
+        <div id="layoutSidenav">
+            
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid">
+
+                    </div>
+                </main>
+
+                    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <h2>Agregar Empleado</h2>
+                    </div>
+                    <p>Favor diligenciar el siguiente formulario, para agregar el empleado.</p>
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+
+                        <div class="form-group <?php echo (!empty($name_err)) ? 'has-error' : ''; ?>">
+                            <label>Nombre</label>
+                            <input type="text" name="name" class="form-control" value="<?php echo $name; ?>">
+                            <span class="help-block"><?php echo $name_err;?></span>
+                        </div>
+
+                        <div class="form-group <?php echo (!empty($apellido_err)) ? 'has-error' : ''; ?>">
+                            <label>Primer apellido</label>
+                             <input type="text" name="apellido" class="form-control" value="<?php echo $apellido; ?>">
+                            <span class="help-block"><?php echo $apellido_err;?></span>
+                        </div>                     
+
+                        <div class="form-group <?php echo (!empty($correo_err)) ? 'has-error' : ''; ?>">
+                            <label>correo</label>
+                            <input type="text" name="correo" class="form-control" value="<?php echo $correo; ?>">
+                            <span class="help-block"><?php echo $correo_err;?></span>
+                        </div>
+
+                        <div class="form-group <?php echo (!empty($numero_err)) ? 'has-error' : ''; ?>">
+                            <label>numero</label>
+                            <input type="text" name="numero" class="form-control" value="<?php echo $numero; ?>">
+                            <span class="help-block"><?php echo $numero_err;?></span>
+                        </div>
+
+                        <div class="form-group <?php echo (!empty($contra_err)) ? 'has-error' : ''; ?>">
+                            <label>contraseña</label>
+                            <input type="text" name="contra" class="form-control" value="<?php echo $contra; ?>">
+                            <span class="help-block"><?php echo $contra_err;?></span>
+                        </div>
+
+                        <input type="submit" class="btn btn-primary" value="Submit">
+                        <a href="../../../../../garden_house/proyectofinal/Admi_cliente/cliente/cliente/index.php" class="btn btn-default">Cancelar</a>
+                    </form>
+                </div>
+            </div>        
+        </div>
+    </div>
+
+
+                
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Your Website 2020</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/datatables-demo.js"></script>
+    </body>
+</html>
+ 
